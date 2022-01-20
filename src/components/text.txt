@@ -1,0 +1,27 @@
+let destinations = [
+    { id: 1, name: "Mexico", description: "Lobsters at the beach" },
+    { id: 2, name: "Texas", description: "Eat good bbq" },
+    { id: 3, name: "Vietnam", description: "Party til the sun goes up" },
+  ]);
+  
+
+let newDestination = { id: 4, name: "Vietnam4", description: "Party til the sun goes up4" }
+let newDestination2 = { id: 5, name: "Vietnam5", description: "Party til the sun goes up5" }
+
+//What does the following line of code do?
+let moreDestinations = [newDestination2, ...destinations, newDestination];
+my answer: it will start with newDestination2 values and then take all of destinations values and end it with the values of newDestination2
+
+//What does the following line of code do?
+let destinations2 = destinations.filter((destination) => destination.id === 1);
+my answer: This line of code will filter out values in the objects with an id that is equal to 1
+
+//What does the following line of code do?
+let destinations3 = destinations.filter((destination) => destination.id !== 5);
+my answer: this line of code will produce a new variable with new values. The new values will be the filtered values in the object that has an id that is not equal to 5. 
+
+
+//create a function that takes in an array and an id.  the function returns a new array without the object containing the id. TBC
+
+
+//create a fucntion that takes in an array and an object.  Use the spread operator to return a new array with the object added to the end.TBC
